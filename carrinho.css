@@ -1,0 +1,123 @@
+.carrinho{
+    background-color: rgb(97, 245, 97);
+    border: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 134px;
+    right: 0px;
+}
+
+.carsize {
+    width: 100%;
+    height: 105;
+    cursor: pointer;
+}
+
+.carrinho:hover{
+    background: rgb(1, 228, 1);
+    transition: 0.2s;
+}
+
+.infocar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 134px;
+    right: -241px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid #000;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 200px; 
+    padding-bottom: 530px;
+    transition: all 0.5s ease;
+    max-height: 10px;
+}
+
+.carrinho.move {
+    right: 242px;
+    top: 134px;
+    transition: all 0.5s ease;
+}
+
+.carrinho.move1 {
+    right: 0px;
+    top: 134px;
+    transition: all 0.5s ease;
+}
+
+.infocar.show {
+    right: 0px;
+}
+
+
+.item {
+    display: flex;
+    gap: 5px;
+}
+
+.item img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.item .item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item .carProdName {
+    font-size: 30px;
+    color: #000;
+}
+
+.item .carProdValue {
+    font-size: 14px;
+    color: #000;
+    margin-left: 2px;
+}
+
+.item .prodQuant {
+    border: 0px;
+    background: fixed 0px #ffffff00;
+    color:#525252;
+    width: 25%;
+}
+
+.item .quantName {
+    color: #525252;
+    position: relative;
+    right: 7px;
+}
+
+.lineTotal{
+    display: flex;
+}
+
+.lineTotal::after {
+    content: '';
+    background: #000;
+    position:absolute;
+    width: 85%;
+    height: 2px;
+    top: 89%;
+    right: 8%;
+}
+
+.totalText, .totalCar {
+    color: #000;
+    font-size: 25px;
+    position: relative;
+    top: 480px;
+    right:1%;
+}

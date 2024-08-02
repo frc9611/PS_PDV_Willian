@@ -1,0 +1,28 @@
+.titulo {
+    text-align: center;
+    color: rgb(112, 42, 158);
+    font-size: 40px;
+    background: hsla(278, 70%, 48%, 0.089);
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.compra {
+    padding: 10px 8px;
+    text-align: center;
+    background-color: rgb(149, 27, 230);
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: black;
+    width: 150px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.compra:hover {
+    background-color: rgb(78, 25, 114);
+    transition-duration: 0.35s;
+}
